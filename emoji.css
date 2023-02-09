@@ -2,20 +2,25 @@ body {
   margin: 0;
   background: url(1.jpg);
 }
+h1{
+    font-size: 50px;
+    text-align: center;
+    color: darkred;
+    font-weight: bold;
+    font-family: monospace;
+}
 .photo{
     margin: 50px;
     border-radius: 100%;
 }
 .container {
-  position: absolute;
+  position: relative;
   border-color: rgb(255, 0, 0);
   border-radius: 100%;
   background-color: yellow;
   width: 400px;
   height: 400px;
-  display: flex;
-  top: 25%;
-  right: 35%;
+  top: 50%;
 }
 
 .eyes {
