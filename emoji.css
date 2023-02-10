@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background: url(1.jpg);
+  background: linear-gradient(45deg, #1b4c6d, #3a3237);
 }
 #header{
     font-size: 50px;
@@ -12,6 +12,8 @@ body {
 .photo{
     margin: 50px;
     border-radius: 100%;
+    border: 10px solid black;
+    
 }
 .container {
   position: relative;
@@ -20,6 +22,8 @@ body {
   background-color: yellow;
   width: 400px;
   height: 400px;
+  margin: 50px;
+  border: 10px solid black;
 }
 
 .eyes {
