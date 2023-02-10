@@ -2,42 +2,68 @@ body {
   margin: 0;
   background: linear-gradient(45deg, #1b4c6d, #3a3237);
 }
-#header{
-    font-size: 50px;
-    text-align: center;
+#header {
+  font-size: 50px;
+  text-align: center;
+  color: darkred;
+  font-weight: bold;
+  font-family: monospace;
+}
+#header:hover {
+  animation-name: header;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+@keyframes header {
+  0% {
     color: darkred;
-    font-weight: bold;
-    font-family: monospace;
+    font-size: 50px;
+  }
+  25% {
+    color: darkblue;
+    font-size: 65px;
+  }
+  50% {
+    color: darkgreen;
+    font-size: 75px;
+  }
+  75% {
+    color: darkorange;
+    font-size: 85px;
+  }
+  100% {
+    color: darkviolet;
+    font-size: 100px;
+  }
 }
-.photo{
-    margin: 50px;
-    border-radius: 100%;
-    border: 10px solid black;
-    
+.photo {
+  margin: 50px;
+  border-radius: 100%;
+  border: 10px solid black;
 }
-.photo:hover{
-    animation-name: photo;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-    animation-delay: 0.5s;
-    
+.photo:hover {
+  animation-name: photo;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
 }
-@keyframes photo{
-    0%{
-        rotate: 0deg;
-    }
-    25%{
-        rotate: 90deg;
-    } 
-    50%{
-        rotate: 180deg;
-    }
-    75%{
-        rotate: 270deg;
-    }
-    100%{ 
-        rotate: 360deg;
-    }
+@keyframes photo {
+  0% {
+    rotate: 0deg;
+  }
+  25% {
+    rotate: 90deg;
+  }
+  50% {
+    rotate: 180deg;
+  }
+  75% {
+    rotate: 270deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
 }
 .container {
   position: relative;
@@ -84,30 +110,30 @@ body {
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-delay: 0.5s;
+}
+@keyframes sad {
+  0% {
+    margin-top: 178px;
+    margin-left: 50px;
+    width: 300px;
+    height: 132px;
+    border: 50px solid red;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-radius: 100%;
   }
-  @keyframes sad{
-  0%{
-  margin-top: 178px;
-  margin-left: 50px;
-  width: 300px;
-  height: 132px;
-  border: 50px solid red;
-  border-top-width: 0;
-  border-left-width: 0;
-  border-right-width: 0;
-  border-radius: 100%;
-  }1%{
+  1% {
     border-bottom-width: 0;
     margin-top: 230px;
-
   }
-  100%{
-  border: 50px solid red;
-  border-bottom-width: 0;
-  border-left-width: 0;
-  border-right-width: 0;
-  border-radius: 100%;
-  margin-top: 230px;
+  100% {
+    border: 50px solid red;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-radius: 100%;
+    margin-top: 230px;
   }
 }
 #eyebraw {
@@ -118,9 +144,9 @@ body {
   top: 25px;
   border-radius: 100px;
 }
-#eyebraw:hover{
+#eyebraw:hover {
   top: 15px;
-  right:15px;
+  right: 15px;
 }
 #eyebraw1 {
   background-color: black;
@@ -131,7 +157,7 @@ body {
   left: 30px;
   top: 25px;
 }
-#eyebraw1:hover{
+#eyebraw1:hover {
   top: 15px;
-  left:15px;
+  left: 15px;
 }
