@@ -15,6 +15,30 @@ body {
     border: 10px solid black;
     
 }
+.photo:hover{
+    animation-name: photo;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    
+}
+@keyframes photo{
+    0%{
+        rotate: 0deg;
+    }
+    25%{
+        rotate: 90deg;
+    } 
+    50%{
+        rotate: 180deg;
+    }
+    75%{
+        rotate: 270deg;
+    }
+    100%{ 
+        rotate: 360deg;
+    }
+}
 .container {
   position: relative;
   border-color: rgb(255, 0, 0);
@@ -56,7 +80,35 @@ body {
   border-radius: 20px 20px 100px 100px;
 }
 .mouth:hover {
-  border: 100px;
+  animation-name: sad;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+  }
+  @keyframes sad{
+  0%{
+  margin-top: 178px;
+  margin-left: 50px;
+  width: 300px;
+  height: 132px;
+  border: 50px solid red;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-radius: 100%;
+  }1%{
+    border-bottom-width: 0;
+    margin-top: 230px;
+
+  }
+  100%{
+  border: 50px solid red;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-radius: 100%;
+  margin-top: 230px;
+  }
 }
 #eyebraw {
   background-color: black;
@@ -66,6 +118,10 @@ body {
   top: 25px;
   border-radius: 100px;
 }
+#eyebraw:hover{
+  top: 15px;
+  right:15px;
+}
 #eyebraw1 {
   background-color: black;
   position: absolute;
@@ -74,4 +130,8 @@ body {
   border-radius: 100px;
   left: 30px;
   top: 25px;
+}
+#eyebraw1:hover{
+  top: 15px;
+  left:15px;
 }
