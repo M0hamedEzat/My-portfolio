@@ -1,40 +1,284 @@
+/* Define the body style */
 body {
   margin: 0;
-  background: linear-gradient(45deg, #1b4c6d, #3a3237);
+  /* Set the background to a linear gradient */
+  background: linear-gradient(to right, #8b5e3c, #f5f5dc);
+  /* Set the font family */
+  font-family: sans-serif;
+  /* Set the background color */
+  background-color: #f0e68c;
 }
-#header {
+
+/* Define the header style */
+header {
+  /* Set the background color to lightbrown */
+  background-color: lightbrown;
+  /* Set the text color to white */
+  color: white;
+  /* Center the text */
+  text-align: center;
+  /* Add some padding to the top and bottom */
+  padding: 30px 0;
+}
+
+/* Define the header h1 style */
+header h1 {
+  /* Set the font size */
+  font-size: 36px;
+  /* Add some margin at the bottom */
+  margin-bottom: 10px;
+}
+
+/* Define the header p style */
+header p {
+  /* Set the font size */
+  font-size: 18px;
+  /* Add some margin at the bottom */
+  margin-bottom: 20px;
+}
+
+/* Define the header nav style */
+header nav {
+  /* Display the nav as an inline block */
+  display: inline-block;
+  /* Add some margin at the bottom */
+  margin-bottom: 20px;
+}
+
+/* Define the header nav a style */
+header nav a {
+  /* Set the text color to white */
+  color: white;
+  /* Add some margin to the right */
+  margin-right: 20px;
+  /* Remove the text decoration */
+  text-decoration: none;
+  /* Set the font size */
+  font-size: 18px;
+}
+
+/* Define the fadeIn animation keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Define the media query for devices with a minimum width of 768px */
+@media (min-width: 768px) {
+  /* Apply the animation delay to the thumbnail class */
+  .thumbnail {
+    animation-delay: 0.5s;
+  }
+}
+
+/* Define the container style */
+.container {
+  /* Set the maximum width */
+  max-width: 1140px;
+  /* Center the container */
+  margin: 0 auto;
+  /* Add some padding to the top and bottom */
+  padding: 50px 0;
+}
+
+/* Define the thumbnail style */
+.thumbnail {
+  /* Center the text */
+  text-align: center;
+  /* Start with an opacity of 0 */
+  opacity: 0;
+  /* Apply the fadeIn animation */
+  animation: fadeIn 1s ease-in-out forwards;
+  /* Set the background color */
+}
+h1, h2, h3 {
+  color: #404040;
+  text-align: center;
+}
+
+#projects-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#projects h2{
+    color: #343a40;
+  padding: 10px 20px;
+  margin: 0;
+  border-radius: 5px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 36px;
+  font-weight: bold;
+
+}
+#projects h2:hover {
+  background-color: #343a40;
+  color: #a81616;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out 0.3s;
+}
+
+
+.col-sm-6 {
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .col-sm-6 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-sm-6 {
+    width: 33.3333%;
+  }
+}
+
+#about {
+  background-color: #e9d67a;
+  padding: 40px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+#about h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+#about h2:hover {
+  color: #a81616;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out 0.3s;
+}
+
+#about p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill {
+  width: 300px;
+  text-align: center;
+  margin: 20px;
+}
+
+@media (max-width: 576px) {
+  .skill {
+    width: 150px;
+  }
+}
+
+@media (max-width: 767px) {
+  .skill {
+    width: 200px;
+  }
+}
+
+@media (max-width: 992px) {
+  .skill {
+    width: 250px;
+  }
+}
+
+.skill img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+#skills h2 {
+  color: #343a40;
+  padding: 10px 20px;
+  margin: 0;
+  border-radius: 5px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+#skills h2:hover {
+  background-color: #343a40;
+  color: #a81616;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out 0.3s;
+}
+
+#contact h2 {
+  color: #343a40;
+  padding: 10px 20px;
+  margin: 0;
+  border-radius: 5px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+#contact h2:hover {
+  background-color: #343a40;
+  color: #a81616;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out 0.3s;
+}
+
+/* #header {
   font-size: 50px;
   text-align: center;
   color: darkred;
   font-weight: bold;
   font-family: monospace;
+  cursor: pointer;
 }
 #header:hover {
   animation-name: header;
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 }
 @keyframes header {
   0% {
-    color: darkred;
     font-size: 50px;
   }
-  25% {
-    color: darkblue;
-    font-size: 65px;
+  100% {
+    font-size: 60px;
   }
-  50% {
-    color: darkgreen;
-    font-size: 75px;
-  }
-  75% {
-    color: darkorange;
-    font-size: 85px;
+}
+#header.reverse {
+  font-size: 50px;
+  text-align: center;
+  color: darkred;
+  font-weight: bold;
+  font-family: monospace;
+  cursor: pointer;
+}
+#header.reverse:hover {
+  animation-name: header-reverse;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+}
+@keyframes header-reverse {
+  0% {
+    font-size: 60px;
   }
   100% {
-    color: darkviolet;
-    font-size: 100px;
+    font-size: 50px;
   }
 }
 .photo {
@@ -46,7 +290,7 @@ body {
   animation-name: photo;
   animation-duration: 3s;
   animation-fill-mode: forwards;
-  animation-delay: 0.5s;
+  animation-delay: 1s;
 }
 @keyframes photo {
   0% {
@@ -63,7 +307,7 @@ body {
   background-color: yellow;
   width: 400px;
   height: 400px;
-  margin: 50px;
+  margin: 20px;
   border: 10px solid black;
 }
 
@@ -152,3 +396,23 @@ body {
   top: 15px;
   left: 15px;
 }
+.bounce {
+  animation: bounce 2s;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-80px);
+  }
+  60% {
+    transform: translateY(-25px);
+  }
+}
+ */

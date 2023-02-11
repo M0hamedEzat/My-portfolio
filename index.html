@@ -7,10 +7,127 @@
     <title>Mohamed Ezat</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/3f4e671373.js" crossorigin="anonymous"></script>
+
   </head>
   <body>
-    <h1 id="header">This site is under constructions.</h1>
-    <img src="images/2.jpg" alt="Mohamed Ezat's photo" class="photo" />
+    <header>
+      <h1>Mohamed Ezat</h1>
+      <p>
+        Hello, I'm a front-end web developer and you are in my portfolio page!
+      </p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <!--     about section-->
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I'm a front-end web developer, I'm 17 years old and I'm from Egypt. I'm
+        currently a high school student. I'm a self-taught web developer, I
+        started learning web development in 2022 and I'm still learning. I'm
+        currently learning React.js and I'm planning to learn Node.js, TypeScript, NextJs and
+        Express.js in the future.
+      </p>
+    </section>
+    <!--     skills section-->
+    <section id="skills">
+      <h2 style="margin-bottom: 20px;">Skills</h2>
+      <div class="skills">
+        <div class="skill">
+      <i class="fa-brands fa-html5 fa-2xl"></i>
+          <p>HTML</p>
+           <div class="progress" style=" width: 200px;">
+        <div class="progress-bar" role="progressbar" style="width: 90%; background-color: #215732;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+      </div>
+        </div>
+        <div class="skill">
+      <i class="fa-brands fa-css3-alt fa-2xl"></i>
+          <p>CSS</p>
+        <div class="progress" style=" width: 200px;">
+        <div class="progress-bar" role="progressbar" style="width: 80%; background-color: #215732;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">80%</div>
+      </div>
+
+        </div>
+        <div class="skill" >
+      <i class="fab fa-js fa-2xl"></i>
+          <p>JavaScript</p>
+                <div class="progress" style=" width: 200px;">
+        <div class="progress-bar" role="progressbar" style="width: 60%; background-color: #215732;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">60%</div>
+      </div>
+
+        </div>
+        <div class="skill">
+      <i class="fab fa-react fa-2xl"></i>
+          <p>React.js</p>
+                <div class="progress" style=" width: 200px;">
+        <div class="progress-bar" role="progressbar" style="width: 40%; background-color: #215732;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">40%</div>
+      </div>
+
+        </div>
+        <div class="skill">
+      <i class="fab fa-node fa-2xl"></i>
+          <p>Node.js</p>
+                <div class="progress" style=" width: 200px;">
+        <div class="progress-bar" role="progressbar" style="width: 50%; background-color: #215732;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">50%</div>
+      </div>
+
+        </div>
+      </div>
+    </section>
+
+ <!--    Projects section -->
+ 
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="row" id="projects-section">
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a id="hyperlink" href="https://m0hamedezat.github.io/Landing-page/" target="_blank"> 
+                    <img src="images/landing-page.PNG" alt="landing-page">
+                </a>
+                <div class="caption">
+                    <h3>Landing Page</h3>
+                    <p>I build a landing page when i was taking the udacity Course.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="images/web-journel.PNG" alt="Web-journel-app" >
+                <div class="caption">
+                    <h3>Web journel app</h3>
+                    <p>A brief description of Project 2 goes here.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!--     contact section-->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact">
+        <div class="contact-info">
+          <div class="contact-info-item">
+            <img src="images/phone.png" alt="phone" />
+            <p>+201093682463</p>
+          </div>
+          <div class="contact-info-item">
+            <img src="images/email.png" alt="email" />
+            <p>
+<!--     <img src="images/2.jpg" alt="Mohamed Ezat's photo" class="photo" />
     <div class="container">
       <div class="eyes">
         <div id="eyebraw"></div>
@@ -20,5 +137,6 @@
       </div>
       <div class="mouth"></div>
     </div>
+ -->    <script src="js/app.js"></script>
   </body>
 </html>
