@@ -1,4 +1,8 @@
 /* Define the body style */
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
 body {
   margin: 0;
   /* Set the background to a linear gradient */
@@ -7,6 +11,8 @@ body {
   font-family: sans-serif;
   /* Set the background color */
   background-color: #f0e68c;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /* Define the header style */
@@ -24,17 +30,25 @@ header {
 /* Define the header h1 style */
 header h1 {
   /* Set the font size */
-  font-size: 36px;
+  font-size: 50px;
   /* Add some margin at the bottom */
   margin-bottom: 10px;
+  color: #e9d67a;
+  font-weight: bold;
+  margin-top: 30px;
 }
 
 /* Define the header p style */
 header p {
   /* Set the font size */
-  font-size: 18px;
+  font-size: 20px;
   /* Add some margin at the bottom */
   margin-bottom: 20px;
+  margin-top: 30px;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Standard */
 }
 
 /* Define the header nav style */
@@ -43,6 +57,10 @@ header nav {
   display: inline-block;
   /* Add some margin at the bottom */
   margin-bottom: 20px;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Standard */
 }
 
 /* Define the header nav a style */
@@ -54,7 +72,10 @@ header nav a {
   /* Remove the text decoration */
   text-decoration: none;
   /* Set the font size */
-  font-size: 18px;
+  font-size: 25px;
+}
+header nav a:hover,header nav a:focus {
+  text-decoration: none;
 }
 
 /* Define the fadeIn animation keyframes */
@@ -95,9 +116,15 @@ header nav a {
   animation: fadeIn 1s ease-in-out forwards;
   /* Set the background color */
 }
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: #404040;
   text-align: center;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Standard */
 }
 
 #projects-section {
@@ -105,8 +132,8 @@ h1, h2, h3 {
   flex-wrap: wrap;
   justify-content: center;
 }
-#projects h2{
-    color: #343a40;
+#projects h2 {
+  color: #343a40;
   padding: 10px 20px;
   margin: 0;
   border-radius: 5px;
@@ -114,7 +141,6 @@ h1, h2, h3 {
   -webkit-background-clip: text;
   font-size: 36px;
   font-weight: bold;
-
 }
 #projects h2:hover {
   background-color: #343a40;
@@ -122,7 +148,6 @@ h1, h2, h3 {
   cursor: pointer;
   transition: all 0.5s ease-in-out 0.3s;
 }
-
 
 .col-sm-6 {
   width: 100%;
@@ -143,8 +168,8 @@ h1, h2, h3 {
 #about {
   background-color: #e9d67a;
   padding: 40px;
-  text-align: center;
   font-family: Arial, sans-serif;
+  text-align: left;
 }
 
 #about h2 {
@@ -160,10 +185,19 @@ h1, h2, h3 {
   cursor: pointer;
   transition: all 0.5s ease-in-out 0.3s;
 }
+#about img {
+  border-radius: 50%;
+  border: 5px solid #343a40;
+  margin-bottom: 20px;
+}
 
 #about p {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.5;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Standard */
 }
 
 .skills {
@@ -218,6 +252,19 @@ h1, h2, h3 {
   cursor: pointer;
   transition: all 0.5s ease-in-out 0.3s;
 }
+footer{
+  background-color: #343a40;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  text-align: left;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+ #contact {
+  text-align: left;
+  margin: 20px;
+}
 
 #contact h2 {
   color: #343a40;
@@ -236,7 +283,56 @@ h1, h2, h3 {
   cursor: pointer;
   transition: all 0.5s ease-in-out 0.3s;
 }
+.contact-info {
+display: flex; 
+flex-direction: row;
+align-items: center;
+text-align: center;
+margin-right: 20px;
 
+}
+
+.contact-info-item {
+  margin-bottom: 20px;
+}
+
+form {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.social-ico{
+  margin-bottom: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+
+}
 /* #header {
   font-size: 50px;
   text-align: center;
