@@ -296,12 +296,9 @@ h3 {
   transition: all 0.5s ease-in-out 0.3s;
 }
 footer {
-  background-color: #343a40;
-  padding: 1px;
   font-family: Arial, sans-serif;
-  text-align: left;
-  color: white;
   font-weight: bold;
+  background-color: #343a40;
   font-size: 15px;
   -webkit-user-select: none; /* Safari */
   -moz-user-select: none; /* Firefox */
@@ -375,7 +372,14 @@ button[type="submit"] {
   margin-bottom: 20px;
   display: inline-block;
   vertical-align: middle;
-  margin-right: 10px;
+  padding: 10px;
+}
+#links-media{
+    -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Standard */
+
 }
 /* #header {
   font-size: 50px;
