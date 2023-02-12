@@ -20,7 +20,7 @@ header {
   /* Set the background color to lightbrown */
   background-color: lightbrown;
   /* Set the text color to white */
-  color: white;
+  color: black;
   /* Center the text */
   text-align: center;
   /* Add some padding to the top and bottom */
@@ -67,7 +67,7 @@ header nav {
 /* Define the header nav a style */
 header nav a {
   /* Set the text color to white */
-  color: white;
+  color: black;
   /* Add some margin to the right */
   margin-right: 20px;
   /* Remove the text decoration */
