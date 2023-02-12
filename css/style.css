@@ -54,14 +54,20 @@ header p {
 
 /* Define the header nav style */
 header nav {
+  display: block;
   /* Display the nav as an inline block */
-  display: inline-block;
   /* Add some margin at the bottom */
   margin-bottom: 20px;
   -webkit-user-select: none; /* Safari */
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Standard */
+    width: 100%; 
+
+}
+header nav.sticky {
+  top: 0;
+  position: fixed;
 }
 
 /* Define the header nav a style */
@@ -138,7 +144,7 @@ h3 {
 }
 #projects h2 {
   color: #343a40;
-  padding: 10px 20px;
+  padding: 70px 20px;
   margin: 0;
   border-radius: 5px;
   background-clip: text;
@@ -275,12 +281,12 @@ h3 {
 
 #skills h2 {
   color: #343a40;
-  padding: 10px 20px;
   border-radius: 5px;
   background-clip: text;
   -webkit-background-clip: text;
   font-size: 36px;
   font-weight: bold;
+  padding: 70px 20px;
 }
 
 #skills h2:hover {
@@ -308,7 +314,7 @@ footer {
 
 #contact h2 {
   color: #343a40;
-  padding: 10px 20px;
+  padding: 70px 20px;
   margin: 0;
   border-radius: 5px;
   background-clip: text;

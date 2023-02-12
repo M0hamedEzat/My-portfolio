@@ -39,20 +39,25 @@ $(document).ready(function () {
     }
   });
 });
-const sections = document.querySelectorAll("section");
+var sections = document.querySelectorAll("section");
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
 
 window.onscroll = function () {
   sections.forEach(function (active) {
-    // loops for all the sections
     if (
       active.getBoundingClientRect().top >= -500 &&
       active.getBoundingClientRect().top <= 450
     ) {
-      //Add class
-      active.classList.add("your-active-class"); // active the class, when the if statment is true
+      active.classList.add("your-active-class");
     } else {
-      // Remove class
-      active.classList.remove("your-active-class"); // remove active class, when one of the if statment is false
+      active.classList.remove("your-active-class");
     }
   });
+
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
 };
