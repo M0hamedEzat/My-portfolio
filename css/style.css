@@ -135,7 +135,7 @@ h3 {
   user-select: none; /* Standard */
 }
 #projects {
-  min-height: 120vh;
+  min-height: 140vh;
 }
 #projects-section {
   display: flex;
@@ -182,7 +182,7 @@ h3 {
 .your-active-class {
   background-color: #e9d67a;
   transition: background-color 2s ease-in-out;
-  transition-delay: 0.2s;
+  transition-delay: 0.3s;
 
 }
 #about {
