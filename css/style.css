@@ -237,6 +237,10 @@ h3 {
   width: 300px;
   text-align: center;
   margin: 20px;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 .skill .progress {
   width: 100%;
@@ -335,16 +339,17 @@ footer {
 }
 
 .contact-info-item {
-  margin-bottom: 20px;
+  padding: 20px;
 }
 
 form {
   display: inline-block;
   vertical-align: top;
+  padding-left: 20px;
 }
 
 .form-group {
-  margin-bottom: 20px;
+  padding: 5px;
 }
 
 label {
@@ -365,7 +370,7 @@ button[type="submit"] {
   padding: 10px 20px;
   background-color: #4caf50;
   color: white;
-  border: none;
+  border-radius: 10px;
   cursor: pointer;
 }
 .social-ico {
