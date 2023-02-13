@@ -61,3 +61,20 @@ window.onscroll = function () {
     navbar.classList.remove("sticky");
   }
 };
+$(document).ready(function () {
+  $("#sub-btn").click(function () {
+    const name = $("#name").val();
+    const email = $("#email").val();
+    const message = $("#message").val();
+    const inputs = [name, email, message];
+
+    if (inputs.some((input) => input === "")) {
+      const empty = alert("Please fill all the fields");
+      return empty;
+    } else {
+      // All inputs are filled, continue with the function
+      const success = alert("Your message has been received. Thank you!");
+      return success;
+    }
+  })
+});
