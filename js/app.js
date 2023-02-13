@@ -60,7 +60,20 @@ window.onscroll = function () {
   } else {
     navbar.classList.remove("sticky");
   }
+
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    document.getElementById("scrollBtn").style.display = "block";
+  } else {
+    document.getElementById("scrollBtn").style.display = "none";
+  }
 };
+
+function topFunction() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
 $(document).ready(function () {
   $("#sub-btn").click(function () {
     const name = $("#name").val();
