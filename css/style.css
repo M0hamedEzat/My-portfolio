@@ -88,6 +88,8 @@ header nav {
 header nav.sticky {
   top: 0;
   position: fixed;
+  display: block;
+  background-color: #8f6140;
 }
 
 /* Define the header nav a style */
