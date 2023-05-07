@@ -6,11 +6,10 @@ html {
 body {
   margin: 0;
   /* Set the background to a linear gradient */
-  background: linear-gradient(to right, #8b5e3c, #f5f5dc);
+  background: linear-gradient(to right, #C33764   , #1D2671);
   /* Set the font family */
   font-family: sans-serif;
   /* Set the background color */
-  background-color: #f0e68c;
   width: 100%;
   overflow-x: hidden;
 }
@@ -89,13 +88,13 @@ header nav.sticky {
   top: 0;
   position: fixed;
   display: block;
-  background-color: #8f6140;
+  background: linear-gradient(to right, #C33764  , #1D2671);
 }
 
 /* Define the header nav a style */
 header nav a {
   /* Set the text color to white */
-  color: black;
+  color: rgb(255, 255, 255);
   /* Add some margin to the right */
   margin-right: 20px;
   /* Remove the text decoration */
@@ -207,8 +206,8 @@ h3 {
 }
 
 .your-active-class {
-  background-color: #8f6140;
-  transition: all 2s ease-in-out;
+/*   background-color: #C33764;
+ */  transition: all 2s ease-in-out;
   transition-delay: 0.3s;
 }
 #about {
@@ -257,6 +256,7 @@ h3 {
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Standard */
+  color: white;
 }
 .skills {
   display: flex;
