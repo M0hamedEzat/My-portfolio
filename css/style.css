@@ -27,6 +27,7 @@ body {
   padding: 15px;
   border-radius: 100%;
   transition: all 1s ease-in-out;
+  color: #C33764;
 }
 #scrollBtn:hover {
   box-shadow: #343a40 0px 0px 10px 5px;
@@ -245,7 +246,7 @@ h3 {
 #about img:hover {
   border: 5px solid #404040;
   transition: all 0.5s ease-in-out 0.1s;
-  box-shadow: #404040 0px 0px 10px 5px;
+  box-shadow: #C33764 0px 0px 10px 5px;
   cursor: grab;
 }
 
@@ -288,6 +289,7 @@ h3 {
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Standard */
+  color: whitesmoke;
 }
 
 @media (max-width: 576px) {
