@@ -110,6 +110,9 @@ body{
     cursor: pointer;
     opacity: .8;
     transition: all .4s ease;
+    background-color: #000000;
+    border: #000000;
+    border-radius: 20%;
 }
 .menubar span{
     position: relative;
