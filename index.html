@@ -98,7 +98,16 @@
             </div>
             <!--header image-->
             <div class="header-image">
-            <img src="images/photo.jpg" alt="logo">
+  <picture>
+    <!-- Display this image for screens with a viewport width less than 600px (phones) -->
+    <source media="(max-width: 600px)" srcset="images/photosmall.jpg">
+    
+    <!-- Display this image for screens with a viewport width of 601px and above (big screens) -->
+    <source media="(min-width: 601px)" srcset="images/photo.jpg">
+    
+    <!-- If none of the above conditions match, display this image -->
+    <img src="images/photo.jpg" alt="Fallback Image">
+  </picture>
             </div>
             <!--header image end-->
         </div>
