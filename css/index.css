@@ -1919,7 +1919,7 @@ for tabs and large phones
     left: 0;
     bottom: 0;
     position: absolute;
-    padding: 10px;
+/*     padding: 0;*/
     height: auto;
     display: flex;
     flex-direction: row;
