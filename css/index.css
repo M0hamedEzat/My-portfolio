@@ -1919,11 +1919,13 @@ for tabs and large phones
     left: 0;
     bottom: 0;
     position: absolute;
+    padding: 10px;
     height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-bottom: 60px;
   }
   .header-content-box {
     padding-left: 0px;
